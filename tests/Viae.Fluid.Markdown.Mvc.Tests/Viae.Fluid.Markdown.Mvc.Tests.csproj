@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>14.0</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MSTest" Version="4.0.0-preview.25465.3" />
+        <PackageReference Include="FluentAssertions" Version="8.8.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../../src/Viae.Fluid.Markdown.Mvc/Viae.Fluid.Markdown.Mvc.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+        <Using Include="FluentAssertions" />
+        <Using Include="Fluid" />
+        <Using Include="Fluid.Values" />
+        <Using Include="Fluid.ViewEngine" />
+        <Using Include="Markdig" />
+        <Using Include="Microsoft.AspNetCore.Html" />
+    </ItemGroup>
+</Project>
