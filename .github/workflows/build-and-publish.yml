@@ -37,12 +37,10 @@ jobs:
         run: |
           nbgv cloud
           echo "Version=$(nbgv get-version -v NuGetPackageVersion)" >> $GITHUB_OUTPUT
-          echo "SimpleVersion=$(nbgv get-version -v SimpleVersion)" >> $GITHUB_OUTPUT
 
       - name: Display build information
         run: |
           echo "Building version ${{ steps.nbgv.outputs.Version }}"
-          echo "Simple version ${{ steps.nbgv.outputs.SimpleVersion }}"
           echo "NuGet push enabled: ${{ vars.ENABLE_NUGET_PUSH }}"
 
       - name: Restore dependencies
@@ -60,7 +58,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: nuget-packages-${{ steps.nbgv.outputs.SimpleVersion }}
+          name: nuget-packages-${{ steps.nbgv.outputs.Version }}
           path: ./artifacts/*.nupkg
 
       - name: Publish to NuGet (dev branch)
