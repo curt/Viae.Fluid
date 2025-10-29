@@ -8,19 +8,20 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="MSTest" Version="4.0.0-preview.25465.3" />
+        <PackageReference Include="coverlet.collector" Version="6.0.4" />
         <PackageReference Include="FluentAssertions" Version="8.8.0" />
+        <PackageReference Include="MSTest" Version="4.0.0-preview.25465.3" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="../../src/Viae.Fluid.Markdown.Mvc/Viae.Fluid.Markdown.Mvc.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
         <Using Include="FluentAssertions" />
-        <Using Include="Fluid" />
         <Using Include="Fluid.Values" />
         <Using Include="Fluid.ViewEngine" />
+        <Using Include="Fluid" />
         <Using Include="Markdig" />
         <Using Include="Microsoft.AspNetCore.Html" />
+        <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
     </ItemGroup>
 </Project>

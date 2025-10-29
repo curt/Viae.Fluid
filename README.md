@@ -3,6 +3,7 @@
 Markdown rendering helpers for the [Fluid](https://github.com/sebastienros/fluid) Liquid template engine, powered by [Markdig](https://github.com/xoofx/markdig) and tuned for both generic .NET apps and ASP.NET MVC scenarios.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Coverage Status](https://coveralls.io/repos/github/curt/Viae.Fluid/badge.svg?branch=dev)](https://coveralls.io/github/curt/Viae.Fluid?branch=dev)
 
 ## Packages
 

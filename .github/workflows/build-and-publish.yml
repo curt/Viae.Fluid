@@ -50,7 +50,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test --configuration Release --no-build --verbosity normal
+        run: dotnet test --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory TestResults
 
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output ./artifacts
@@ -60,6 +60,9 @@ jobs:
         with:
           name: nuget-packages-${{ steps.nbgv.outputs.Version }}
           path: ./artifacts/*.nupkg
+
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
 
       - name: Publish to NuGet (dev branch)
         if: github.ref == 'refs/heads/dev' && github.event_name == 'push' && vars.ENABLE_NUGET_PUSH == 'true'
