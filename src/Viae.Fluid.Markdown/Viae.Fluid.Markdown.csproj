@@ -9,7 +9,9 @@
         <PackageId>Viae.Fluid.Markdown</PackageId>
         <Authors>Curt Gilman</Authors>
         <Description>A custom Markdown filter for the Fluid template engine, based on Markdig</Description>
+        <PackageProjectUrl>https://github.com/curt/Viae.Fluid</PackageProjectUrl>
         <RepositoryUrl>https://github.com/curt/Viae.Fluid</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
         <PackageTags>fluid;markdown;liquid;markdig</PackageTags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
