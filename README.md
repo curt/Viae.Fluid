@@ -10,8 +10,8 @@ Markdown rendering helpers for the [Fluid](https://github.com/sebastienros/fluid
 
 | Package | Description | Target Frameworks |
 | --- | --- | --- |
-| [`Viae.Fluid.Markdown`](src/Viae.Fluid.Markdown/README.md) | Core Markdown filter for Fluid templates, returning HTML strings. | `netstandard2.0` |
-| [`Viae.Fluid.Markdown.Mvc`](src/Viae.Fluid.Markdown.Mvc/README.md) | MVC adapter that integrates the Markdown filter with Fluid.MvcViewEngine and prevents double-encoding in Razor views. | `net8.0`, `net10.0` |
+| [`Viae.Fluid.Markdown`](src/Viae.Fluid.Markdown/README.md) ![NuGet Version](https://img.shields.io/nuget/v/Viae.Fluid.Markdown) | Core Markdown filter for Fluid templates, returning HTML strings. | `netstandard2.0` |
+| [`Viae.Fluid.Markdown.Mvc`](src/Viae.Fluid.Markdown.Mvc/README.md) ![NuGet Version](https://img.shields.io/nuget/v/Viae.Fluid.Markdown.Mvc) | MVC adapter that integrates the Markdown filter with Fluid.MvcViewEngine and prevents double-encoding in Razor views. | `net8.0`, `net10.0` |
 
 Both packages ship XML documentation, include comprehensive unit tests (60+ for the core library and 40+ for MVC), and treat warnings as build errors to keep the codebase clean.
 
